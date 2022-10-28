@@ -37,10 +37,10 @@ class AuthenticationRepository {
 
     await getIt.get<ISecureStorage>().write("tokenTime",tokenTime.toString());
     await getIt.get<ISecureStorage>().write("lastSessionToken", DateTime.now().toIso8601String());
-
     await getIt.get<ISecureStorage>().write("token", token);
-    getIt.registerSingleton<String>(token, instanceName: "token");
     await getIt.get<ISecureStorage>().write("refreshToken", refreshToken);
+
+    getIt.registerSingleton<String>(token, instanceName: "token");
     getIt.registerSingleton<String>(refreshToken, instanceName: "refreshToken");
 
     return Right(user);
