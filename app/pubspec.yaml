@@ -1,0 +1,36 @@
+name: app
+description: Base app with provider.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  # Storage
+  flutter_secure_storage: ^5.0.2
+
+  # State Managment
+  provider: ^6.0.4
+  get_it: ^7.2.0
+
+  # Utils
+  either_dart: ^0.1.4
+  dio: 4.0.4
+  logger: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
