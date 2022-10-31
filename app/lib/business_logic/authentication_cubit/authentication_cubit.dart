@@ -10,7 +10,7 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
 
   final AuthenticationRepository _authenticationRepository;
 
-  AuthenticationCubit(this._authenticationRepository) : super(const AuthenticationState());
+  AuthenticationCubit(this._authenticationRepository) : super(AuthenticationState());
 
   Future<void> init() async {
 
